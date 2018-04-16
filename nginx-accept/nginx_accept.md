@@ -100,4 +100,6 @@
     示例参考：[Linux ReusePort, ReuseAddr](https://raw.githubusercontent.com/tickbh/blogdoc/master/nginx-accept/linux_reuseaddr.c)
 * windows
     > windows通过CreateProcess并且设置其中的子进程继承，通过命令行的方式把句柄值传递给子进程，启动进程后关闭主进程的句柄，从而使子进程拥有各自独立的accept权限。通过锁或者时序来控制谁来accept。
-    示例参与：[Rust版的windows CreateProcess控制](https://raw.githubusercontent.com/tickbh/blogdoc/master/nginx-accept/linux_reuseaddr.c)
+    示例参与：[Rust版的windows CreateProcess控制](https://github.com/tickbh/blogdoc/tree/master/nginx-accept/windows_rust)
+    ![用ab测试进行的压力测试](https://raw.githubusercontent.com/tickbh/blogdoc/master/nginx-accept/windows_createprocess_sub.jpg)
+    (运行截图, 其中584进程每接受一个新的socket时sleep 10秒时间)
