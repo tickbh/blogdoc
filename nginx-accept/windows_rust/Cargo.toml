@@ -1,0 +1,13 @@
+[package]
+name = "fork"
+version = "0.1.0"
+authors = ["tickbh <tickdream125@hotmail.com>"]
+
+[dependencies]
+nix = "0.9.0"
+#psocket = "0.1.4"
+subprocess = "0.1.12"
+winapi = { version = "0.3", features = ["winuser", "processthreadsapi", "winbase", "processenv", "handleapi"] }
+
+[dependencies.psocket]
+path = "F:/my_source/psocket-rs"
